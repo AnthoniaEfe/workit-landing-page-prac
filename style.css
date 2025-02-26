@@ -1,4 +1,6 @@
 /* general styles  */
+
+
 *{
     margin:0;
     padding:0;
@@ -7,6 +9,9 @@
 
 /* mobile styles */
 body{
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
     background-color: #fff;
     min-height:100vh;
     width:100vw;
@@ -24,6 +29,58 @@ header{
 #phone-image{
     height: 50px;
     width: 70px;
+}
+
+.nav-bar{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+#nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color:#fff;
+    text-decoration:underline solid #41fea1;
+}
+
+#header-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 span{
+    text-decoration:underline solid #41fea1;
+}
+
+#header-btn{
+    background-color: #41fea1;
+    color:#301934;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+   border: 1px solid #41fea1;
+   cursor:pointer;
+}
+
+#header-btn:hover{
+    background-color: #301934;
+    color:#41fea1;
 }
 
 
