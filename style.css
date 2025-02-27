@@ -18,17 +18,23 @@ body{
 }
 
 header{
-    height: 85vh;
+    height: 60vh;
     width:100%;
     margin:0;
     padding:2rem;
     background-color: #301934;
-    border-radius: 0px 0px 25% 25%;
+    /* border-radius: 0px 0px 25% 25%; */
+    border-bottom-left-radius: 100% 30%;
+    border-bottom-right-radius: 100% 30%;
+    position: relative;
 }
 
 #phone-image{
-    height: 50px;
-    width: 70px;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+ 
+    
 }
 
 .nav-bar{
@@ -83,10 +89,50 @@ h1 span{
     color:#41fea1;
 }
 
+#background-design{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 500px;
+    
+}
+
+#design-image1{
+    display: none;
+ }
+ 
+ 
+ #design-image2{
+   display: none; 
+ }
+
+ .section-one{
+    display: flex;
+    flex-direction: column;
+    color: purple;
+    font-size: 16px;
+ }
+
+
 
 /* tablet styles */
 @media screen and (min-width:480px) {
 
+    #design-image1{
+        position: absolute;
+        top: 50px;
+        left: 0px; 
+        display: block;
+     }
+     
+     
+     #design-image2{
+        position: absolute;
+        top: 150px;
+        right: 0px; 
+        display: block;
+     }
 }
 
 
